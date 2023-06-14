@@ -6,11 +6,20 @@
       "author": "typicode"
     }
   ],
-  "comments": [
+  "signupUser": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "gaurab",
+      "email": "144lazy@gmail.com",
+      "number": "+9779815300160",
+      "password": "subba",
+      "id": 1
+    },
+    {
+      "name": null,
+      "email": null,
+      "number": null,
+      "password": null,
+      "id": 2
     }
   ],
   "profile": {
@@ -18,28 +27,52 @@
   },
   "employees": [
     {
-      "firstName": "gaurab",
-      "lastName": "subba",
-      "email": "144lazy@gmail.com",
-      "dob": "1999-09-19T18:15:00.000Z",
-      "gender": "1",
-      "education": "Intermidate",
-      "company": "saas",
-      "experience": "1",
-      "package": "4",
-      "id": 1
-    },
-    {
       "firstName": "fianle",
       "lastName": "gone",
-      "email": "gone@fuck.com",
+      "email": "gone@finale.com",
       "dob": "2023-04-09T18:15:00.000Z",
       "gender": "male",
       "education": "Graduate",
       "company": "nero",
       "experience": "2",
-      "package": "7",
+      "package": "html , css ",
+      "id": 1
+    },
+    {
+      "firstName": "gaurab",
+      "lastName": "subba",
+      "email": "144lazy@gmail.com",
+      "dob": "1999-09-19T18:15:00.000Z",
+      "gender": "male",
+      "education": "Intermidate",
+      "company": "saas",
+      "experience": "1",
+      "package": "Angular",
       "id": 2
+    },
+    {
+      "firstName": "luigi",
+      "lastName": "lead",
+      "email": "144luigi@gmail.com",
+      "dob": "2023-06-14T18:15:00.000Z",
+      "gender": "male",
+      "education": "Graduate",
+      "company": "mario",
+      "experience": 5,
+      "package": "gaming",
+      "id": 3
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dob": "",
+      "gender": "",
+      "education": "",
+      "company": "",
+      "experience": "",
+      "package": "",
+      "id": 4
     }
   ]
 }

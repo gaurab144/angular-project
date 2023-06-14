@@ -6,10 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class EmployeeService {
+
+  private base_Url = 'http://localhost:3000/employees';
+
   constructor(private _http: HttpClient) {}
 
   addEmployee(data: any): Observable<any> {
-    return this._http.post(' http://localhost:3000/employees', data);
+    return this._http.post(this.base_Url, data);
   }
 
   updateEmployee(id: number, data: any): Observable<any> {
@@ -17,7 +20,7 @@ export class EmployeeService {
   }
 
   getEmployeeList(): Observable<any> {
-    return this._http.get(' http://localhost:3000/employees');
+    return this._http.get(this.base_Url);
   }
 
   deleteenmployee(id: number) {

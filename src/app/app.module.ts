@@ -21,9 +21,16 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+
+
+
+
 
 @NgModule({
-  declarations: [AppComponent, TestComponent],
+  declarations: [AppComponent, TestComponent, EmployeeDashboardComponent, LoginComponent, SignupComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -44,6 +51,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatPaginatorModule,
     MatSortModule,
     MatSnackBarModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent],

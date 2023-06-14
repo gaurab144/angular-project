@@ -1,0 +1,71 @@
+<section class="vh-100" style="background-color: #508bfc;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 3rem;">
+          <div class="card-body p-5">
+            <div class="text-center">
+              <h2 class="mb-5" style="font-weight: bold;">Sign-Up</h2>
+            </div>
+            <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+            <div class="row">
+              <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  placeholder="Name"
+                  formControlName="name"
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="row">
+              <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input
+                  matInput
+                  type="email"
+                  placeholder="email"
+                  formControlName="email"
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="row">
+              <mat-form-field appearance="outline">
+                <mat-label>Mobile Number</mat-label>
+                <input
+                  matInput
+                  type="text"
+                  placeholder="number"
+                  formControlName="number"
+                />
+              </mat-form-field>
+            </div>
+
+
+            <div class="row">
+              <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input
+                  matInput
+                  type="password"
+                  placeholder="password"
+                  formControlName="password"
+                />
+              </mat-form-field>
+            </div>
+            
+            <hr class="my-4">
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
+            <a class="text-primary px-5" routerLink="/login">Already registered! login page</a>
+
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

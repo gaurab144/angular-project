@@ -1,0 +1,46 @@
+<section class="vh-100" style="background-color: #508bfc;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card shadow-2-strong" style="border-radius: 3rem;">
+            <div class="card-body p-5">
+              <div class="text-center">
+                <h2 class="mb-5" style="font-weight: bold;">Sign-In</h2>
+              </div>
+              <form [formGroup]="signInForm" (ngSubmit)="signIn()" >
+              <div class="row">
+                <mat-form-field appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input
+                    matInput
+                    type="email"
+                    placeholder="email"
+                    formControlName="email"
+                  />
+                </mat-form-field>
+              </div>
+
+              <div class="row">
+                <mat-form-field appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input
+                    matInput
+                    type="password"
+                    placeholder="password"
+                    formControlName="password"
+                  />
+                </mat-form-field>
+              </div>
+              
+              <hr class="my-4">
+
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+              <a class="text-primary px-5" routerLink="/signup">For new account register</a>
+            </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
