@@ -8,7 +8,7 @@ export class AuthService {
 
   constructor(private router: Router) { }
   IsLoggedIn(){
-    return !!localStorage.getItem('token');
+    return localStorage.getItem('token');
   }
 
   logout(){

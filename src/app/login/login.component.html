@@ -17,6 +17,8 @@
                     placeholder="email"
                     formControlName="email"
                   />
+                  <mat-icon matSuffix>email</mat-icon>
+                  <mat-error *ngIf="signInForm.get('email')?.invalid">{{ getErrorOnLogin('email') }}</mat-error>
                 </mat-form-field>
               </div>
 
@@ -29,6 +31,10 @@
                     placeholder="password"
                     formControlName="password"
                   />
+                  <button type="button" mat-icon-button matSuffix (click)="hideLoginPassword = !hideLoginPassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideLoginPassword">
+                    <mat-icon>{{hideLoginPassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+                  </button>
+                  <mat-error *ngIf="signInForm.get('password')?.invalid">{{ getErrorOnLogin('password') }}</mat-error>
                 </mat-form-field>
               </div>
               

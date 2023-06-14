@@ -24,6 +24,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 
@@ -51,6 +53,7 @@ import { SignupComponent } from './signup/signup.component';
     MatPaginatorModule,
     MatSortModule,
     MatSnackBarModule,
+    MatCardModule
  
   ],
   providers: [],
